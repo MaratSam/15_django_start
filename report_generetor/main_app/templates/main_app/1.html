@@ -1,7 +1,30 @@
 {% extends "main_app/layout.html" %}
 
 {% block my_content1 %}
+<div class='features'>
+    <h1>Main page</h1>
+    <h1>{{ title123 }}</h1>
+    <p>lorem ipsum sdlcknsd lsdcoksd loksjdjcolkisdm losndoclkmsdo losdclkosd</p>
+    <p>{{ my_values }}</p>
+    {% for val in my_values %}
+    <p> {{ val }}</p>
+    {% endfor %}
 
-<p>Some text on the first page</p>
+    {% for val in obj %}
+    <p>{{ val  }}</p>
+    
+        {% if val == 'car' %}
+        <p>{{ val }}</p>
+        {% endif %}
+
+        {% filter upper%}
+        <p>{{ val }}</p>
+        {% endfilter%}
+
+        <p>{{val|upper}}</p>
+    {% endfor %}
+    
+    <button type='button' class="btn btn-warning"> Go back to about us page</button>
+</div>
 
 {% endblock %}
