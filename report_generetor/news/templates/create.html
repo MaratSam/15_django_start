@@ -1,0 +1,25 @@
+{% extends "main_app/layout.html" %}
+
+{% block title %} Create a record form {% endblock %}
+
+{% block my_content1 %}
+<div class='features'>
+   <h1>New record form</h1>
+   <form method='post'>
+      {% csrf_token %}
+      {{form.title}}
+      <br>
+      {{form.brief_desription}}
+      <br>
+      {{form.full_text}}
+      <br>
+      {{form.date}}
+      <br>
+      <button class="btn btn-success" type="submit"> Add the article</button>
+      <span>{{ error }}</span>
+   </form>
+   {# this is how to add a comment #}
+   
+</div>
+
+{% endblock %}
