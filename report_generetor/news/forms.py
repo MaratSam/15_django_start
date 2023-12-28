@@ -17,6 +17,7 @@ class ArticlesForm(ModelForm):
             }),
             'date' : DateTimeInput (attrs={
                 'class':'form-control',
+                'type':'datetime-local',
                 'placeholder':'Date of the article'
             }),
             'full_text' : Textarea (attrs={
