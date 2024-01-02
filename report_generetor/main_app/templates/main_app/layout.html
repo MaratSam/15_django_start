@@ -14,14 +14,14 @@
 <body>
     <aside>
         <img src="{% static 'main_app/img/5.jpg' '%}" alt="beautiful nature"  >
-        <span class="logo">TVE Report</span>
+        <span class="logo">My little</span>
         <br>
-        <span class="logo">generator</span>
+        <span class="logo">note board</span>
         <h3>Menu</h3>
         <ul>
             <a href="{% url 'home' %}"><li><i class="fas fa-compact-disc"></i>Main</li></a>
-            <a href="{% url 'about' %}"><li><i class="fas fa-check"></i>About Us</li></a>
-            <a href="{% url 'news_home' %}"><li><i class="fas fa-check"></i>Site news</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-check"></i>About this board</li></a>
+            <a href="{% url 'news_home' %}"><li><i class="fas fa-check"></i>Notes</li></a>
             <a href=""><li><i class="fas fa-car"></i>Contacts</li></a>
             <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-car"></i>Add a record</li></a>
         </ul>

@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 
 def index(request):
-    data = {"title123":"Data from request",
-    "my_values" : ['one', "two", "three" ],
+    data = {"title123":"!",
+    "my_values" : ['1', "2", "3" ],
     'obj':{'car':'BMW',
            "age" : 33,
            "hobby" :"football"}}
