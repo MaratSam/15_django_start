@@ -15,7 +15,8 @@ main .features h1 {
 }
 main .features p {
     max-width: 1800px;
-    margin: 5px;}
+    margin: 5px;
+    word-wrap: break-word;}
 
 
 aside {

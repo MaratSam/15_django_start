@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Articles
 from .forms import ArticlesForm
 from django.views.generic import DetailView, UpdateView, DeleteView
+from datetime import datetime
 
 
 # Create your views here.
@@ -27,10 +28,13 @@ class NewsDeleteView (DeleteView):
 
 def create (request):
     error=''
-    if request.method == 'POST':
+    if request.method == 'POST': #we process the returning data in the same this function
         form=ArticlesForm(request.POST)
+        
         if form.is_valid():
-            form.save()
+            entry=form.save(commit=False)   # commit=False tells Django that "Don't send this to database yet; there are more things I want to do with it."
+            entry.date=datetime.now()
+            entry.save() # Now you can send it to DB
             return redirect('news_home')
         else:
             error='The form was filled in incorrectly'
