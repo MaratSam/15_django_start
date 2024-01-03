@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from os import path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-&b*!zqsmb$0z3xs5tmm6k3)mx^dkf8_8^u@aleva_8q7)in5h4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['my-env-python.eba-uckfpwef.ap-southeast-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['my-env-python.eba-uckfpwef.ap-southeast-2.elasticbeanstalk.com','127.0.0.1']
 
 
 # Application definition
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'report_generetor.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],
+        'DIRS': [ path.join(BASE_DIR, "templates") ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -117,7 +118,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = '/static'
 
 STATICFILES_DIRS = [
     #BASE_DIR / "static",
