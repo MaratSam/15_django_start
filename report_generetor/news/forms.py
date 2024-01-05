@@ -9,14 +9,14 @@ class ArticlesForm(ModelForm):
         widgets = {
             'title':TextInput (attrs={
                 'class':'form-control',
-                'placeholder':'The name of the article'
+                'placeholder':'The title of the entry'
             }),
             'brief_desription' : TextInput (attrs={
                 'class':'form-control',
-                'placeholder':'Brief description'
+                'placeholder':'Brief description of the entry'
             }),
             'full_text' : Textarea (attrs={
                 'class':'form-control',
-                'placeholder':'The article itself'
+                'placeholder':'The main body of the entry'
             })                         
         }
