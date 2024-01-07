@@ -1,8 +1,12 @@
 Some instructions of how to make a similar project: https://www.youtube.com/watch?v=2Xbhiw1AZO0&list=PLDyJYA6aTY1nZ9fSGcsK4wqeu-xaJksQQ&index=5
 Some instructiona how to set up AWS elastic beanstalk: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html
-Some instructiona how to finish setting up a django project to work properly on AWS infrastructure (S3, EC2 and others): https://testdriven.io/blog/storing-django-static-and-media-files-on-amazon-s3/
+Some instructiona how to finish setting up a django project to work properly on AWS infrastructure (S3, EC2, PostgreSQL and others): https://testdriven.io/blog/storing-django-static-and-media-files-on-amazon-s3/ AND https://testdriven.io/blog/django-elastic-beanstalk/
+
 
 
 Limitations: 
 - the web app does not look well on a mobile device
 - no hhtps, no SSL/TLS is supported
+
+
+
