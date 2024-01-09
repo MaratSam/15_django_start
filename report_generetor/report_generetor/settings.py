@@ -89,7 +89,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'report_generetor.wsgi.application'
 
 
-# # Database
+# # Database  f
 # # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 
