@@ -1,0 +1,17 @@
+{% extends "main_app/layout.html" %}
+
+{% block title %} Delete a record  {% endblock %}
+
+{% block my_content1 %}
+<div class='features'>
+   <h1>Note deletion</h1>
+   <form method='post'>
+      {% csrf_token %}
+             <button class="btn btn-success" type="submit"> Delete the article</button>
+   </form>
+   
+   {# this is how to add a comment #}
+   
+</div>
+
+{% endblock %}

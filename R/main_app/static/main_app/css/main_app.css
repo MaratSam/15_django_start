@@ -1,0 +1,99 @@
+body {background: rgb(37, 11, 11);
+color: #f35f54;}
+
+main .features {
+    float:left;
+    color: #fff;
+    margin-top: 100px;
+    text-align:center;
+    width: 80%;
+}
+
+main .features h1 {
+    font-size: 50px;
+    
+}
+main .features p {
+    max-width: 1800px;
+    margin: 5px;
+    word-wrap: break-word;}
+
+
+aside {
+    float:left;
+    background: rgb(32, 2, 2);
+    width : 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #c52c2cde;
+    border-right: 5px solid rgb(148, 99, 99);
+}
+
+aside img{
+    width:80px;
+    float: left;
+    margin-right: 5px;
+}
+
+aside .logo {
+    font-size: 20px;
+    margin-left: 0px;
+    font-weight: bold;
+    position: relative;
+    top: -6px
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {list-style: none}
+
+aside ul li {color: #fff;
+display: block;
+margin-top: 20px;
+transition: transform  .6s ease;
+}
+
+aside a{
+    text-decoration: none;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #ff7474;
+   text-decoration: none;
+   transform: scale(1.05);
+    }
+
+main .btnn  {
+    text-decoration: none;
+    font-size: 38px;
+    transition: all  0.3s;
+}
+
+main :hover .btnn   {
+   transform: scale(0.95);
+   
+   color: #ff7474;
+}
+
+aside i {
+    margin-right: 10px;   
+}
+
+.alert-warning {
+
+    float : center;
+    clear : both;
+    width: 500px;
+    margin: 20px 34%;
+    text-align : left;
+
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}

@@ -1,0 +1,34 @@
+{% extends "main_app/layout.html" %}
+
+{% block my_content1 %}
+<div class='features'>
+    <h1>My little note board</h1>
+    <h1>Main Page</h1>
+    <h1>{{ title123 }}</h1>
+    <p>Please use a button Add a record to add a record.</p>
+<!--    
+    <p>{{ my_values }}</p>
+    {% for val in my_values %}
+    <p> {{ val }}</p>
+    {% endfor %}
+
+    {% for val in obj %}
+    <p>{{ val  }}</p>
+    
+        {% if val == 'car' %}
+        <p>{{ val }}</p>
+        {% endif %}
+
+        {% filter upper%}
+        <p>{{ val }}</p>
+        {% endfilter%}
+
+        <p>{{val|upper}}</p>
+    {% endfor %} -->
+    <p class='btnn'>
+    <a class='btnn' href="{% url 'about' %}">*<button type='button' class="btn btn-warning"> Go to about us page</button>*</a>
+    </p>
+</div>     
+
+
+{% endblock %}
